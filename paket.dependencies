@@ -1,23 +1,24 @@
 source https://nuget.org/api/v2
-storage: packages
-
+storage: none
 clitool dotnet-fable
 nuget FSharp.Core
 nuget FSharp.NET.Sdk
 nuget Fable.Core
 nuget Fable.Import.Browser
-nuget Fable.Import.Node 0.1.5
-nuget Fable.Import.VSCode 0.1.2
+nuget Fable.Import.Node 
+nuget Fable.Import.VSCode
 nuget Paket
 nuget Paket.Core 
 
-git https://github.com/dungpa/fantomas.git master build: "build.cmd", OS: windows
-git https://github.com/dungpa/fantomas.git master build: "build.sh", OS: mono
+group Local
+    storage: packages
+    git https://github.com/dungpa/fantomas.git master build: "build.cmd", OS: windows
+    git https://github.com/dungpa/fantomas.git master build: "build.sh", OS: mono
 
 
 group Build
-framework: net46
-
+    framework: net46
+    storage: none
     source https://nuget.org/api/v2
     nuget FSharp.Core  redirects:force, content:none
     nuget FAKE
