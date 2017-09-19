@@ -1,10 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack -w",
+    "webpack:build": "webpack -p",
+    "webpack": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "fable-splitter src/vscode_fsharp_format_provider.fsproj --outDir release/dist --watch"
+    "start": "fable-splitter src/vscode_fsharp_format_provider.fsproj --outDir release/dist --watch",
+    "build": "fable-splitter src/vscode_fsharp_format_provider.fsproj --outDir release/dist"
   },
   "dependencies": {
     "babel-runtime": "6.26.0",

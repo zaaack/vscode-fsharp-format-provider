@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Process.fs" />
+    <Compile Include="FFI.fs" />
     <Compile Include="Fantomascli.fs" />
     <Compile Include="Extension.fs" />
   </ItemGroup>

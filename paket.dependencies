@@ -18,7 +18,7 @@ group Local
 
 group Build
     framework: net46
-    storage: none
+    storage: packages
     source https://nuget.org/api/v2
     nuget FSharp.Core  redirects:force, content:none
     nuget FAKE

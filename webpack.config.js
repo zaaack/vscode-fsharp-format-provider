@@ -18,8 +18,8 @@ module.exports = {
   devtool: "source-map",
   entry: resolve('./src/vscode_fsharp_format_provider.fsproj'),
   output: {
-    filename: 'dist.js',
-    path: resolve('./release'),
+    filename: 'bundle.js',
+    path: resolve('./release/dist'),
   },
   resolve: {
     modules: [resolve("./node_modules/")]
