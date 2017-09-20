@@ -32,4 +32,4 @@ Target "CopyFantomasCLI"
     copyRecursive (DirectoryInfo fantomasCLIDir) 
         (DirectoryInfo fantomasCLIReleaseDir) false 
     |> printfn "Copied FantomasCLI Files: \n%A")
-RunTargetOrDefault "All"
+RunTargetOrDefault "CopyFantomasCLI"
